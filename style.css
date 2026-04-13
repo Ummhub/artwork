@@ -1,0 +1,51 @@
+@charset "UTF-8";
+body {
+    background-color: #000000;
+    font-family: 'suit','futura','부크크체','Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+h1 {
+    font-size: 30px;
+    /* border: 3px solid #ffffff; */
+    color: #ffffff;
+    border-radius: 30px;
+    /* border: 1px solid #ffffff; */
+    padding: 15px 30px;
+    margin: 30px auto;
+    text-align: center;
+}
+img {
+    border-radius: 50%;
+    width: 200px ;
+}
+p,ul {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+ul {
+    width: 250px;
+    margin: 0 auto;
+    padding-left: 0; /* <- ul의 기본 패딩 제거 */
+    list-style: none; /* <- ul의 기본 리스트 스타일 제거 */
+}
+li {
+    margin: 20px auto;
+}
+a {
+    text-decoration-line: none;
+    background-color: #ffffff;
+    color: #000000;
+    display: block;
+    padding: 15px 0;
+
+}
+p {
+   font-family: '부크크체';
+   font-weight: 500; 
+}
+a:hover {
+    background-color: yellow;
+    color: #000000;
+    font-weight: bold;
+    transition: 0.3s;
+}
