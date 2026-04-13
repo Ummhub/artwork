@@ -48,4 +48,5 @@ a:hover {
     color: #000000;
     font-weight: bold;
     transition: 0.3s;
+    text-content: "click me!";
 }
