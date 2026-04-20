@@ -50,3 +50,7 @@ a:hover {
     transition: 0.3s;
     text-content: "click me!";
 }
+.text {
+    font-family: '부크크체';
+    font-weight: 400;
+}
