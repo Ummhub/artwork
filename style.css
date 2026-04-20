@@ -52,5 +52,9 @@ a:hover {
 }
 .text {
     font-family: '부크크체';
-    font-weight: 400;
+    font-weight: 300;
+}
+.span{
+    font-family: '부크크체';
+    font-weight: 700;
 }
