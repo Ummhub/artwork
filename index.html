@@ -11,21 +11,73 @@
     <h1>I'm a visual communication designer</h1>
     <p><img src="image/it's me.jpeg" alt="Image 1"></p>
     <ul>
-        <li class="who"><a href="image/who.jpeg">who am I</a></li>
-        <li class="text">
+        <div>
+            <li class="who"><a id="whoBtn" href="image/who.jpeg">who am I</a></li>
+            <li class="text" id="whoText">
             한국폴리텍대학교 시각디자인학과<br>
             <span>송정음</span>입니다.<br>
-            
-        </li>
-        <li><a href="image/pick me.jpeg">what design means to me</a></li>
-        <!-- what makes you move? -->
-        <li class="text">
+            </li>
+        </div>
+       
+        <div>
+            <li class="what"><a id="whatBtn" href="image/pick me.jpeg">what design means to me</a></li>
+             <!-- what makes you move? -->
+            <li class="text" id="whatText">
             '시각디자인'은 저에게 텍스트만으로는 전할 수 없는 것들 을 전할 수 있게 해주는 또 다른 언어입니다.<br>
-        </li>
-        <li><a href="image/cheer up.jpeg">next step</a>
-            학교에서 
-        </li>
+             </li>
+        </div>
+        
+
+        <div>
+            <li class="How"><a id="HowBtn" href="image/pick me.jpeg">Next step</a></li>
+             <!-- what makes you move? -->
+            <li class="text" id="HowText">
+                앞으로
+             </li>
+        </div>
+            
     </ul>
 </body>
+<script>
+  const whoBtn = document.getElementById('whoBtn');
+  const whoText = document.getElementById('whoText');
+
+  whoBtn.addEventListener('mouseleave', function () {
+    whoBtn.textContent = 'who am I';
+    whoText.innerHTML = '제가 궁금하시다면, 커서를 올려주세요';
+  });
+  whoBtn.addEventListener('mouseenter', function () {
+    whoBtn.textContent = '안녕하세요. 송정음입니다.';
+    whoText.innerHTML = '현재 저는 한국폴리텍 비주얼커뮤니케이션을 전공하고 있습니다.';
+  });
+
+   const whatBtn = document.getElementById('whatBtn');
+  const whatText = document.getElementById('whatText');
+
+    whatBtn.addEventListener('mouseenter', function () {
+    whatBtn.textContent = '저에게 디자인이란...';
+    whatText.innerHTML = '시각디자인이란 또 다른 언어의 형태라고 생각합니다';
+  });
+
+  whatBtn.addEventListener('mouseleave', function () {
+    whatBtn.textContent = 'What design means to me';
+    whatText.innerHTML = '저에게 디자인이란...';
+  });
+
+   const HowBtn = document.getElementById('HowBtn');
+  const HowText = document.getElementById('HowText');
+
+    HowBtn.addEventListener('mouseenter', function () {
+    HowBtn.textContent = '앞으로 제가 하고 싶은 디자인은';
+    HowText.innerHTML = '시각디자인이란 또 다른 언어의 형태라고 생각합니다';
+  });
+
+  HowBtn.addEventListener('mouseleave', function () {
+    HowBtn.textContent = 'Next Step';
+    HowText.innerHTML = '어떤 디자이너가 되고 싶은지';
+  });
+ 
+ 
+</script>
 
 </html>

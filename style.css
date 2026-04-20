@@ -2,6 +2,11 @@
 body {
     background-color: #000000;
     font-family: 'suit','futura','부크크체','Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+
+     background-image: "bgi.jpg"; /* 배경 이미지 설정 */
+     background-size: cover;      /* 꽉 채우기 */
+    background-position: center; /* 가운데 정렬 */
+    background-repeat: no-repeat;
 }
 h1 {
     font-size: 30px;
@@ -54,7 +59,10 @@ a:hover {
     font-family: '부크크체';
     font-weight: 300;
 }
-.span{
+span {
     font-family: '부크크체';
-    font-weight: 700;
+    font-weight: 400;
+    font-size: 15
+    px
+    ;
 }
