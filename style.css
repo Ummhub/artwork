@@ -66,6 +66,13 @@ a:hover {
     transition: 0.3s;
     text-content: "click me!";
 }
+article a:hover {
+    background-color: rgb(110, 32, 205);
+    color: #000000;
+    font-weight: bold;
+    transition: 0.3s;
+    text-content: "click me!";
+}
 .text {
     font-family: '부크크체';
     font-weight: 300;
@@ -111,4 +118,3 @@ aside {
   display: flex;
   justify-content: center;
 } */
-
