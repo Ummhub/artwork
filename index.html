@@ -5,80 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <title>I'm a visual communication designer</title>
+    <title>'시각디자이너' 송정음입니다</title>
 
 </head>
+
 <body>
-    <h1>I'm a visual communication designer</h1>
-    <p><img src="image/it's me.jpeg" alt="Image 1"></p>
-    <ul>
-        <div>
-            <li class="who"><a id="whoBtn" href="image/who.jpeg">who am I</a></li>
-            <li class="text" id="whoText">
-            한국폴리텍대학교 시각디자인학과<br>
-            <b>송정음</b>입니다.<br>
-            </li>
-        </div>
+  <header>
+    <img = class="mainimg" src="image/시각.webp" alt="">
+    <h1>'시각디자인'을 정의합니다</h1>
+  </header>
+    
+  <article> 
+    <div class="profile-wrap">
+    <img src="image/it's me.jpeg" class="profile-img" alt="Profile Image">
+    </div>
+  </article> 
+  
+  <div> 
+    <ul> 
+        <li class="who"><a id="whoBtn" href="image/who.jpeg">who am I</a></li>
+        <li class="text" id="whoText">
+        한국폴리텍대학교 시각디자인학과<br>
+        <b>송정음</b>입니다.<br></li>
        
-        <div>
-            <li class="what"><a id="whatBtn" href="image/pick me.jpeg">what design means to me</a></li>
-             <!-- what makes you move? -->
-            <li class="text" id="whatText">
-            '시각디자인'은 저에게 텍스트만으로는 전할 수 없는 것들 을 전할 수 있게 해주는 또 다른 언어입니다.<br>
-             </li>
-        </div>
-        
-
-        <div>
-            <li class="How"><a id="HowBtn" href="image/pick me.jpeg">Next step</a></li>
-             <!-- what makes you move? -->
-            <li class="text" id="HowText">
-                앞으로
-             </li>
-        </div>
-            
+        <li class="what"><a id="whatBtn" href="image/pick me.jpeg">what design means to me</a></li>
+          <!-- what makes you move? -->
+        <li class="text" id="whatText">
+        '시각디자인'은 저에게 텍스트만으로는 전할 수 없는 것들 을 전할 수 있게 해주는 또 다른 언어입니다.<br></li>
+    
+        <li class="How"><a id="HowBtn" href="image/pick me.jpeg">Next step</a></li>
+          <!-- what makes you move? -->
+        <li class="text" id="HowText">
+            앞으로</li>
     </ul>
+  </div>
+
+  
+
+  <aside> 
+    <div class="countdown">
+    <div class="box">
+      <span id="days">0</span>
+      <span>일</span>
+    </div>
+    <div class="box">
+      <span id="hours">00</span>
+      <span>시간</span>
+    </div>
+    <div class="box">
+      <span id="minutes">00</span>
+      <span>분</span>
+    </div>
+    <div class="box">
+      <span id="seconds">00</span>
+      <span>초</span>
+    </div>
+  </div>
+  </aside>
+
+  
+
+  <script src="main.js"></script> 
+  </div>
 </body>
-<!-- <script>
-  const whoBtn = document.getElementById('whoBtn');
-  const whoText = document.getElementById('whoText');
-
-  whoBtn.addEventListener('mouseleave', function () {
-    whoBtn.textContent = 'who am I';
-    whoText.innerHTML = '제가 궁금하시다면, 커서를 올려주세요';
-  });
-  whoBtn.addEventListener('mouseenter', function () {
-    whoBtn.textContent = '안녕하세요. 송정음입니다.';
-    whoText.innerHTML = '현재 저는 한국폴리텍 비주얼커뮤니케이션을 전공하고 있습니다.';
-  });
-
-   const whatBtn = document.getElementById('whatBtn');
-  const whatText = document.getElementById('whatText');
-
-    whatBtn.addEventListener('mouseenter', function () {
-    whatBtn.textContent = '저에게 디자인이란...';
-    whatText.innerHTML = '시각디자인이란 또 다른 언어의 형태라고 생각합니다';
-  });
-
-  whatBtn.addEventListener('mouseleave', function () {
-    whatBtn.textContent = 'What design means to me';
-    whatText.innerHTML = '저에게 디자인이란...';
-  });
-
-   const HowBtn = document.getElementById('HowBtn');
-  const HowText = document.getElementById('HowText');
-
-    HowBtn.addEventListener('mouseenter', function () {
-    HowBtn.textContent = '앞으로 제가 하고 싶은 디자인은';
-    HowText.innerHTML = '시각디자인이란 또 다른 언어의 형태라고 생각합니다';
-  });
-
-  HowBtn.addEventListener('mouseleave', function () {
-    HowBtn.textContent = 'Next Step';
-    HowText.innerHTML = '어떤 디자이너가 되고 싶은지';
-  });
- 
- 
-</script> -->
 
 </html>
