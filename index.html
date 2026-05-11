@@ -5,111 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <title>'시각디자이너' 송정음입니다</title>
-
+    <title>Visual Communication Designer</title>
 </head>
 
 <body>
+  <div class="center">
   <header>
-    <img = class="mainimg" src="image/시각.webp" alt="">
-    <h1>'시각디자인'을 정의합니다</h1>
+    <nav>
+      <ul class="header-nav">
+        <!-- <p>2025.03.01 - 2026.11.30</p> -->
+      </ul>
+    </nav>
   </header>
-    
-  <article> 
-    <a href="image/it's me.jpeg">
-      <div class="profile-wrap">
-        <img src="image/it's me.jpeg" class="profile-img" alt="Profile Image">
-      </div>
-    </a>
-  </article> 
-  
   <main>
-  <div> 
-    <ul> 
-        <li class="who"><a id="whoBtn" href="image/who.jpeg">who am I</a></li>
-        <li class="text" id="whoText">
-        한국폴리텍대학교 시각디자인학과<br>
-        <b>송정음</b>입니다.<br></li>
-       
-        <li class="what"><a id="whatBtn" href="image/pick me.jpeg">what design means to me</a></li>
-          <!-- what makes you move? -->
-        <li class="text" id="whatText">
-        '시각디자인'은 저에게 텍스트만으로는 전할 수 없는 것들 을 전할 수 있게 해주는 또 다른 언어입니다.<br></li>
-    
-        <li class="How"><a id="HowBtn" href="image/pick me.jpeg">Next step</a></li>
-          <!-- what makes you move? -->
-        <li class="text" id="HowText">
-            앞으로</li>
-    </ul>
+    <section class="main-img">
+        <img class="mainimg1"src="image/저는 디자이너입니다.png" alt="저는 디자이너입니다">
+        <img class="mainimg2"src="image/입니다만 문제라도.png" alt="입니다만 문제라도">
+    </section>
+    <section class="intro">
+      <div class="between2">
+        <div class="name">
+            <h1>Introduction</h1>
+            <p>Visual Communication Designer</p>
+        </div>
+        <p class="who">Song Jung Ummm</p>
+      </div>
+      <div class="between">
+        <div class="left">
+            <p>
+              말과 글 그리고 이미지. 세 가지 중 어떤 방식으로 생각을 전달하시나요?
+              저는 글을 선호하는 편입니다. 그런 제가 시각디자인을 전공하게 된 건, 글로는 닿지 않는 영역이 있다는 걸 알았기 때문입니다. 몇십 문장으로도 전달하기 어려운 감정을 이미지는 단 몇 초만에 느끼게 합니다. 그게 신기하기도 했고, 욕심이 나기도 했습니다.
+              그런데 막상 해보니 쉽지 않았습니다. 말과 글로 정리하면 꽤 괜찮다고 느꼈던 생각들이, 시각화를 하는 순간 기대에 못 미치는 경우가 많았습니다. 툴을 다루는 실력이 미숙해서이기도 했지만, 가장 큰 이유는 이미지를 통해 어떤 '느낌'을 주고 싶은지보다 글처럼 '이해'시키려고 했기 때문입니다.
+            </p>
+        </div>
+        <div class="right">
+            <p>
+              현재의 저에게 디자인을 무엇이라고 생각하는지 묻는다면, '반칙'이라고 답할 것 같습니다.<br>
+              음식, 옷, 심지어 사람을 볼 때도 우리가 처음 반응 하는 건 '비주얼'입니다. 논리적인 설명이 없어도, 실제로 어떤 맛인지 촉감인지 어떤 성격을 갖고있는지 몰라도 순간 갖고 싶게 만드는 것. 그게 디자인의 반칙이고, 제가 매력을 느낀 부분입니다. 설명하지 않아도 멈추게 만들고, 들여다보게 만들고, 마지막엔 갖고 싶게 만드는 디자인을 위해서 앞으로도 계속 저만의 시각적 언어를 쌓아가려 합니다.
+            </p>
+        </div>
+        </div>
+    </section>
+    <section class="subimg">
+      <img src="image/말.png" alt="">
+      <img src="image/rmf.png" alt="">
+    </section>
+  </main>
   </div>
-</main>
   
-
-  <aside> 
-    <div class="countdown">
-    <div class="box">
-      <span id="days">0</span>
-      <span>일</span>
-    </div>
-    <div class="box">
-      <span id="hours">00</span>
-      <span>시간</span>
-    </div>
-    <div class="box">
-      <span id="minutes">00</span>
-      <span>분</span>
-    </div>
-    <div class="box">
-      <span id="seconds">00</span>
-      <span>초</span>
-    </div>
-  </div>
-  </aside>
-
-  <script>
-  const whoBtn = document.getElementById('whoBtn');
-  const whoText = document.getElementById('whoText');
-
-  whoBtn.addEventListener('mouseleave', function () {
-    whoBtn.textContent = 'who am I';
-    whoText.innerHTML = '제가 궁금하시다면, 커서를 올려주세요';
-  });
-  whoBtn.addEventListener('mouseenter', function () {
-    whoBtn.textContent = '안녕하세요. 송정음입니다.';
-    whoText.innerHTML = '현재 저는 한국폴리텍 비주얼커뮤니케이션을 전공하고 있습니다.';
-  });
-
-   const whatBtn = document.getElementById('whatBtn');
-  const whatText = document.getElementById('whatText');
-
-    whatBtn.addEventListener('mouseenter', function () {
-    whatBtn.textContent = '저에게 디자인이란...';
-    whatText.innerHTML = '시각디자인이란 또 다른 언어의 형태라고 생각합니다';
-  });
-
-  whatBtn.addEventListener('mouseleave', function () {
-    whatBtn.textContent = 'What design means to me';
-    whatText.innerHTML = '저에게 디자인이란...';
-  });
-
-   const HowBtn = document.getElementById('HowBtn');
-  const HowText = document.getElementById('HowText');
-
-    HowBtn.addEventListener('mouseenter', function () {
-    HowBtn.textContent = '앞으로 제가 하고 싶은 디자인은';
-    HowText.innerHTML = '시각디자인이란 또 다른 언어의 형태라고 생각합니다';
-  });
-
-  HowBtn.addEventListener('mouseleave', function () {
-    HowBtn.textContent = 'Next Step';
-    HowText.innerHTML = '어떤 디자이너가 되고 싶은지';
-  });
- 
- 
-</script>
-
-  <script src="main.js"></script> 
-  </div>
 </body>
 
 </html>
